@@ -50,13 +50,16 @@ class login extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                height: 50,
-                width: 50,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(
-                      "lib/app/asset/google.png",
+              GestureDetector(
+                onTap: () {},
+                child: Container(
+                  height: 50,
+                  width: 50,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(
+                        "lib/app/asset/google.png",
+                      ),
                     ),
                   ),
                 ),
@@ -88,6 +91,7 @@ class login extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+          TextFormField(),
         ],
       ),
     );
