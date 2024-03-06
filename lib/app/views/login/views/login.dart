@@ -1,5 +1,8 @@
+import 'package:chat_app/app/utilies/string.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../components/components.dart';
 
 class login extends StatelessWidget {
   const login({super.key});
@@ -47,11 +50,26 @@ class login extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+          Container(
+            height: 50,
+            width: 380,
+            decoration: const BoxDecoration(),
+            child: TextFormField(
+              controller: emailController,
+              keyboardType: TextInputType.emailAddress,
+              decoration: const InputDecoration(
+                hintText: "Email ",
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 150,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               GestureDetector(
-                onTap: () {},
+                onTap: google,
                 child: Container(
                   height: 50,
                   width: 50,
@@ -91,7 +109,6 @@ class login extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          TextFormField(),
         ],
       ),
     );

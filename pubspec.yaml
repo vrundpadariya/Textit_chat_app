@@ -43,6 +43,7 @@ dependencies:
   google_sign_in:
   fluttertoast:
   lottie:
+  cherry_toast:
 
   font_awesome_flutter:
   introduction_story:
