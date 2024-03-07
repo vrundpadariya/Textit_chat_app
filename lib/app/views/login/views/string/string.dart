@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 //todo:login screen strings
 TextEditingController emailController = TextEditingController();
 TextEditingController passwordController = TextEditingController();
-TextEditingController sEmailController = TextEditingController();
-TextEditingController sPasswordController = TextEditingController();
 String? email;
 String? password;
 

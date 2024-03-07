@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
+import 'app/views/Signup /views/signup.dart';
 import 'app/views/home/views/home.dart';
 import 'app/views/login/views/login.dart';
 import 'firebase_options.dart';
@@ -20,12 +21,16 @@ void main() async {
         //GetPage(name: '/', page: () => SplashScreen(),),
         //GetPage(name: '/home', page: () => intro(),),
         GetPage(
-          name: '/',
+          name: '/login',
           page: () => login(),
         ),
         GetPage(
           name: '/home',
           page: () => home(),
+        ),
+        GetPage(
+          name: '/',
+          page: () => signup(),
         ),
       ],
     ),

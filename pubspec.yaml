@@ -44,9 +44,8 @@ dependencies:
   fluttertoast:
   lottie:
   cherry_toast:
-
   font_awesome_flutter:
-  introduction_story:
+
 
 dev_dependencies:
   flutter_test:

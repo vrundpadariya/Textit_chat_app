@@ -1,18 +1,15 @@
+import 'package:chat_app/app/views/Signup%20/views/String/strin.dart';
 import 'package:chat_app/app/views/login/views/string/string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import 'package:google_fonts/google_fonts.dart';
+import '../../login/components/components.dart';
+import '../../login/controller/login.dart';
 
-import '../components/components.dart';
-import '../controller/login.dart';
-
-class login extends StatelessWidget {
-  login({super.key});
+class signup extends StatelessWidget {
+  signup({super.key});
   final _texit = GlobalKey<FormState>();
-  LoginController controller = Get.put(LoginController());
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +18,7 @@ class login extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 100,
+              height: 80,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +28,7 @@ class login extends StatelessWidget {
                   height: 60,
                   width: 200,
                   child: Text(
-                    "Log in to Chatbox",
+                    "Sign up to Chatbox",
                     style: GoogleFonts.poppins(
                       fontSize: 20,
                     ),
@@ -59,7 +56,7 @@ class login extends StatelessWidget {
               height: 20,
             ),
             Container(
-              height: 150,
+              height: 300,
               width: double.infinity,
               child: Form(
                 key: _texit,
@@ -71,9 +68,30 @@ class login extends StatelessWidget {
                       decoration: const BoxDecoration(),
                       child: TextFormField(
                         onChanged: (String? val) {
-                          emailController.text = val!;
+                          snameCon.text = val!;
                         },
-                        controller: emailController,
+                        controller: snameCon,
+                        keyboardType: TextInputType.name,
+                        decoration: const InputDecoration(
+                          hintText: "name ",
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.black),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 50,
+                      width: 380,
+                      decoration: const BoxDecoration(),
+                      child: TextFormField(
+                        onChanged: (String? val) {
+                          semailCon.text = val!;
+                        },
+                        controller: semailCon,
                         keyboardType: TextInputType.emailAddress,
                         decoration: const InputDecoration(
                           hintText: "Email ",
@@ -91,14 +109,34 @@ class login extends StatelessWidget {
                       width: 380,
                       decoration: const BoxDecoration(),
                       child: TextFormField(
-                        obscureText: controller.password.isVisible,
                         onChanged: (String? val) {
-                          passwordController.text = val!;
+                          spass.text = val!;
                         },
-                        controller: passwordController,
+                        controller: spass,
                         keyboardType: TextInputType.emailAddress,
                         decoration: const InputDecoration(
                           hintText: "password ",
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.black),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 50,
+                      width: 380,
+                      decoration: const BoxDecoration(),
+                      child: TextFormField(
+                        onChanged: (String? val) {
+                          spassCon.text = val!;
+                        },
+                        controller: spassCon,
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: const InputDecoration(
+                          hintText: "Confirm password",
                           border: OutlineInputBorder(
                             borderSide: BorderSide(color: Colors.black),
                           ),
@@ -115,25 +153,25 @@ class login extends StatelessWidget {
             ElevatedButton(
               onPressed: () async {
                 FocusScope.of(context).unfocus();
-                if (_texit.currentState!.validate()) {
+                if (_texit.currentState!.validate() &&
+                    spass.text == spassCon.text) {
+                  Signup(
+                    email: semailCon.text,
+                    password: spass.text,
+                  );
+                  semailCon.clear();
+                  spassCon.clear();
+                  spass.clear();
+                  snameCon.clear();
                   LoginController().showLoading();
-                  Login(
-                      email: emailController.text,
-                      password: passwordController.text,
-                      context: context);
                 } else {
                   LoginController().hideLoading();
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Invalid Email or Password'),
-                    ),
-                  );
                 }
               },
-              child: const Text("Login up"),
+              child: const Text("Sign up"),
             ),
             const SizedBox(
-              height: 50,
+              height: 30,
             ),
             Stack(
               alignment: Alignment.center,
@@ -152,7 +190,7 @@ class login extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 90,
+              height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -196,14 +234,14 @@ class login extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 60,
+              height: 40,
             ),
             GestureDetector(
               onTap: () {
-                Get.toNamed('/signup');
+                Get.toNamed('/login');
               },
               child: const Text(
-                "Create account? logim In",
+                "Already account? login In",
               ),
             ),
           ],

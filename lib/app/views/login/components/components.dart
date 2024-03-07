@@ -20,7 +20,7 @@ anonymous() async {
 }
 
 //todo: signup btn click
-signUp({required String email, required String password}) async {
+Signup({required String email, required String password}) async {
   SignUpModel signUpModel = SignUpModel(email: email, password: password);
   Map<String, dynamic> res =
       await AuthHelper.authHelper.signUp(signUpModel: signUpModel);
@@ -34,7 +34,7 @@ signUp({required String email, required String password}) async {
 }
 
 //todo: login btn click
-login(
+Login(
     {required String email,
     required String password,
     required BuildContext context}) async {
