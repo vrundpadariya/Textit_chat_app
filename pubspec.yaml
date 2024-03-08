@@ -45,6 +45,7 @@ dependencies:
   lottie:
   cherry_toast:
   font_awesome_flutter:
+  agora_rtc_engine:
 
 
 dev_dependencies:

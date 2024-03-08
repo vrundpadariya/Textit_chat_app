@@ -128,9 +128,11 @@ class login extends StatelessWidget {
                       content: Text('Invalid Email or Password'),
                     ),
                   );
+                  passwordController.clear();
+                  emailController.clear();
                 }
               },
-              child: const Text("Login up"),
+              child: const Text("Login in"),
             ),
             const SizedBox(
               height: 50,

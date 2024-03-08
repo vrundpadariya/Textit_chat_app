@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.22"
+  agora_rtc_engine:
+    dependency: "direct main"
+    description:
+      name: agora_rtc_engine
+      sha256: ec84db08cd6727e3e480abe9089df4a9522aa4315f688ac2abf25a82f26c4055
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.3.0"
   archive:
     dependency: transitive
     description:
@@ -25,14 +33,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
-  bloc:
-    dependency: transitive
-    description:
-      name: bloc
-      sha256: f53a110e3b48dcd78136c10daa5d51512443cea5e1348c9d80a320095fa2db9e
-      url: "https://pub.dev"
-    source: hosted
-    version: "8.1.3"
   boolean_selector:
     dependency: transitive
     description:
@@ -121,14 +121,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
-  equatable:
-    dependency: transitive
-    description:
-      name: equatable
-      sha256: c2b87cb7756efdf69892005af546c56c0b5037f54d2a88269b4f347a505e3ca2
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -198,14 +190,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_bloc:
-    dependency: transitive
-    description:
-      name: flutter_bloc
-      sha256: "87325da1ac757fcc4813e6b34ed5dd61169973871fdf181d6c2109dd6935ece1"
-      url: "https://pub.dev"
-    source: hosted
-    version: "8.1.4"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -320,14 +304,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
-  introduction_story:
-    dependency: "direct main"
+  iris_method_channel:
+    dependency: transitive
     description:
-      name: introduction_story
-      sha256: e895d24ba52c69addbe914655b8bd2ef282699fb1836db8958eefaa25c1acadb
+      name: iris_method_channel
+      sha256: "78caede20be4a1dd258262fb13704aab2f16fd05ef414bed06e7b1e3b95b3413"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.0"
+    version: "2.0.1"
   js:
     dependency: transitive
     description:
@@ -336,6 +320,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      sha256: b10a7b2ff83d83c777edba3c6a0f97045ddadd56c944e1a23a3fdf43a1bf4467
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.8.1"
   leak_tracker:
     dependency: transitive
     description:
@@ -400,14 +392,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.11.0"
-  nested:
-    dependency: transitive
-    description:
-      name: nested
-      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
   path:
     dependency: transitive
     description:
@@ -488,14 +472,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.7.4"
-  provider:
-    dependency: transitive
-    description:
-      name: provider
-      sha256: "9a96a0a19b594dbc5bf0f1f27d2bc67d5f95957359b461cd9feb44ed6ae75096"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.1.1"
   sky_engine:
     dependency: transitive
     description: flutter

@@ -1,7 +1,8 @@
-import 'package:chat_app/app/utilies/auth_helper.dart';
-import 'package:get/get.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-logout() {
-  AuthHelper.authHelper.signOut();
-  Get.toNamed('/login');
+class components {
+  static TextStyle textstyletitel() => GoogleFonts.lato(
+        fontSize: 20,
+      );
 }

@@ -4,6 +4,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
 import 'app/views/Signup /views/signup.dart';
+import 'app/views/chat /views/chat.dart';
 import 'app/views/home/views/home.dart';
 import 'app/views/login/views/login.dart';
 import 'firebase_options.dart';
@@ -21,6 +22,10 @@ void main() async {
         //GetPage(name: '/', page: () => SplashScreen(),),
         //GetPage(name: '/home', page: () => intro(),),
         GetPage(
+          name: '/',
+          page: () => signup(),
+        ),
+        GetPage(
           name: '/login',
           page: () => login(),
         ),
@@ -29,8 +34,8 @@ void main() async {
           page: () => home(),
         ),
         GetPage(
-          name: '/',
-          page: () => signup(),
+          name: '/Chat',
+          page: () => Chats(),
         ),
       ],
     ),
