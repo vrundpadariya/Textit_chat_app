@@ -59,7 +59,7 @@ Project Evaluation:
 
 
 
-=============================================   Screen Shot  ============================================= 
+===================================  Screen Shot  ==================================== 
 <img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/b0da975e-f197-444c-8182-45f4143b85ea" width="250">
 <img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/46bf51c4-793e-45c3-a79c-6c5239199097" width="250">
 <img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/c9d90c8b-0162-48cb-a6b8-4cc5c19ec18d" width="250">
