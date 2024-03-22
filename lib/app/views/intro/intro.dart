@@ -10,28 +10,28 @@ class Intro extends StatelessWidget {
     PageModel(
       image: 'asset/intro1.gif',
       title: 'Welcome to Textit',
-      color: Color(),
+      color: Color(0xffe8f4fc),
       description:
           'Start with a warm welcome message a brief description of the apps purpose or key features',
     ),
     PageModel(
-      image: 'lib/assets/Mobile user-cuate.png',
-      title: 'Explore Features',
-      description:
-          'Provide clear options for users to either sign up for a new account',
-      color: Color(),
-    ),
+        image: 'asset/one2.png',
+        title: 'Explore Features',
+        description:
+            'Provide clear options for users to either sign up for a new account',
+        color: Colors.white),
     PageModel(
-      image: 'lib/assets/Chatting-rafiki.png',
+      image: 'asset/one3.png',
       title: 'Get Started',
       description: 'Let\'s get started!',
-      color: Color(),
+      color: Colors.white,
     ),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [
