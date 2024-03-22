@@ -1,9 +1,6 @@
 import 'package:chat_app/app/views/login/views/string/string.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 
 import '../components/components.dart';
@@ -11,7 +8,9 @@ import '../controller/login.dart';
 
 class login extends StatelessWidget {
   login({super.key});
+
   final _texit = GlobalKey<FormState>();
+
   LoginController controller = Get.put(LoginController());
 
   @override
@@ -112,8 +111,8 @@ class login extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () async {
+            GestureDetector(
+              onTap: () async {
                 FocusScope.of(context).unfocus();
                 if (_texit.currentState!.validate()) {
                   LoginController().showLoading();
@@ -132,7 +131,22 @@ class login extends StatelessWidget {
                   emailController.clear();
                 }
               },
-              child: const Text("Login in"),
+              child: Container(
+                alignment: Alignment.center,
+                height: 80,
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: const Text(
+                  "Sign up",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                  ),
+                ),
+              ),
             ),
             const SizedBox(
               height: 50,
@@ -167,7 +181,7 @@ class login extends StatelessWidget {
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(
-                          "lib/app/asset/google.png",
+                          "asset/google.png",
                         ),
                       ),
                     ),
@@ -179,7 +193,7 @@ class login extends StatelessWidget {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
-                        "lib/app/asset/facebook.png",
+                        "asset/facebook.png",
                       ),
                     ),
                   ),
@@ -190,7 +204,7 @@ class login extends StatelessWidget {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
-                        "lib/app/asset/github.png",
+                        "asset/github.png",
                       ),
                     ),
                   ),

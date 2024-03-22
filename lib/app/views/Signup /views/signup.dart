@@ -1,9 +1,8 @@
 import 'package:chat_app/app/views/Signup%20/views/String/strin.dart';
-import 'package:chat_app/app/views/login/views/string/string.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import '../../login/components/components.dart';
 import '../../login/controller/login.dart';
 
@@ -203,7 +202,7 @@ class signup extends StatelessWidget {
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(
-                          "lib/app/asset/google.png",
+                          "asset/google.png",
                         ),
                       ),
                     ),
@@ -215,7 +214,7 @@ class signup extends StatelessWidget {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
-                        "lib/app/asset/facebook.png",
+                        "asset/facebook.png",
                       ),
                     ),
                   ),
@@ -226,7 +225,7 @@ class signup extends StatelessWidget {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
-                        "lib/app/asset/github.png",
+                        "asset/github.png",
                       ),
                     ),
                   ),
