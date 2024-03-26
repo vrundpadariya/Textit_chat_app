@@ -57,15 +57,14 @@ Project Evaluation:
 - Quality of code and project structure
 - Presentation quality and clarity of communication
 
-![3]()
 
 
 
 <img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/b0da975e-f197-444c-8182-45f4143b85ea" width="250">
 <img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/6dc5d0a1-774f-4e38-bb12-7972189abe64" width="250">
-<img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/0d75a57b-b7c5-4f2a-9491-35b7a40f0775" width="250">
-<img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/06f54d0b-365b-4d0c-a7b1-99836e0c6bcc" width="250">
-<img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/ddba5c58-d36d-4a2c-8712-eda5b1b7d641" width="250">
+
+<img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/919aa538-499b-4f2f-9e72-c494bf07826c" width="250">
+<img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/d960a846-d9a6-481b-8e07-7a54c8dee9dc" width="250">
 <img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/e56a75d0-97f7-49b5-bfc9-44fc0e1f0193" width="250">
 <img src="https://github.com/vrundpadariya/Textit_chat_app/assets/133338321/bc182dee-744b-442f-8be7-a9323e84b683" width="250">
 
