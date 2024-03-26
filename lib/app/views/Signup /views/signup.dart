@@ -149,8 +149,8 @@ class signup extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () async {
+            GestureDetector(
+              onTap: () async {
                 FocusScope.of(context).unfocus();
                 if (_texit.currentState!.validate() &&
                     spass.text == spassCon.text) {
@@ -167,7 +167,22 @@ class signup extends StatelessWidget {
                   LoginController().hideLoading();
                 }
               },
-              child: const Text("Sign up"),
+              child: Container(
+                alignment: Alignment.center,
+                height: 80,
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: const Text(
+                  "Sign up",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                  ),
+                ),
+              ),
             ),
             const SizedBox(
               height: 30,

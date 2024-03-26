@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'model/pagemodekl.dart';
 
@@ -103,11 +104,24 @@ class Intro extends StatelessWidget {
               right: 16.0,
               child: Obx(() {
                 return controller.currentPageIndex.value == pages.length - 1
-                    ? ElevatedButton(
-                        onPressed: () {
+                    ? GestureDetector(
+                        onTap: () {
                           Get.toNamed('/login');
                         },
-                        child: const Text('Get Started'),
+                        child: Container(
+                          alignment: Alignment.center,
+                          height: 50,
+                          width: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Text(
+                            "Get started",
+                            style: GoogleFonts.albertSans()
+                                .copyWith(color: Colors.white, fontSize: 17),
+                          ),
+                        ),
                       )
                     : IconButton(
                         onPressed: () {
